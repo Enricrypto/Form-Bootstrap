@@ -67,7 +67,7 @@
             <label for="amount" class="form-label">First Name</label>
             <input
               type="text"
-              inputmode="text"
+              pattern="[A-Z][a-z]"
               class="form-control"
               placeholder="First name"
               aria-label="First name"
@@ -78,7 +78,7 @@
             <label for="amount" class="form-label">Last Name</label>
             <input
               type="text"
-              inputmode="text"
+              pattern="[A-Z][a-z]"
               class="form-control"
               placeholder="Last name"
               aria-label="Last name"
@@ -89,7 +89,7 @@
         <div class="row mt-3">
           <div class="col-md-6">
             <label for="inputCity" class="form-label">City</label>
-            <input type="text" class="form-control" id="inputCity" required />
+            <input type="text" pattern="[A-Z][a-z]" class="form-control" id="inputCity" required />
           </div>
           <div class="col-md-4">
             <label for="inputState" class="form-label">State</label>
@@ -104,7 +104,7 @@
           </div>
           <div class="col-md-2">
             <label for="inputZip" class="form-label">Postal Code</label>
-            <input type="text" class="form-control" id="inputZip" required />
+            <input type="number" min="4" max="6" class="form-control" id="inputZip" required />
           </div>
         </div>
         <div class="row mt-3">
